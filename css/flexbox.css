@@ -48,7 +48,7 @@
 .rodapePrincipal-patrocinadores-list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-around;
   width: 70%;
   margin-right: 5%;
 }
@@ -69,7 +69,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  flex-grow: 2; /* flex-grow faz o elemento crescer pelo númeto que colocamos +1 e coloca o elemento naquele espaço, por exemplo o número 2, o flex-grow vai dividir o espaço em 3 pedaços e colocar o elemento em 2, o 1 pedaço que sobra vai ser adicionado no elemento ao lado*/
+  flex-grow: 2; /*Ele vai distribuir o elemento pelo número que colocarmos no flex-grow, exemplo: se eu tiver 4 elementos com flex-grow 1, ele vai dividir o espaço total por 4, e colocar cada elemento com 1/4 do tamanho total.*/
 }
 
 .videoSobre-video {
@@ -149,9 +149,14 @@ align-content
 
 flex item:
 order
-flex-grow
-flex-shrink
-flex-basis
-flex
+
+flex-grow - Ele vai distribuir o elemento pelo número que colocarmos no flex-grow, exemplo: se eu tiver 4 elementos com flex-grow 1, ele vai dividir o espaço total por 4, e colocar cada elemento com 1/4 do tamanho total. Por padrão o flex-grow é 0.
+
+flex-shrink - É o inverso do flex-grow, faz com que os elementos diminuam de tamanha, exemplo: se você tiver 4 elementos com 50 px (total de 200px) e diminuir a tela para 100 px, todos os elementos por padrão vão para 25 px, caso você coloque flex-shrink: 2 no primeiro elemento, ele vai diminuir o dobro, ficando com 10 px, e o restante dos elementos com 30px cada (total de 100px). se colocar flex-shrink 0, os elementos não dimuniem.
+
+flex-basis - Recebe um número absoluto, tipo 200 px, basicamente a mesma coisa do width.
+
+flex - Flex é um atalho para flex-grow, flex-shrink e basis, exemplo: flex: 1 2 25% o primeiro número é o grow, o segundo é o shrink e o 25% é o.
+
 align-self
 */
